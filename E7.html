@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Test Page</title>
+    <meta name="Here some description" content="Trying Stuffs">
+    <meta name="Jacopx" content="LabForDP1">
+
+  </head>
+  <body>
+
+    <div class="header">
+      <h1>Test Page</h1>
+    </div>
+    <div class="info">
+      <h4>Website developed by <a href="https://github.com/Jacopx">Jacopx</a></h4>
+    </div>
+    <div class="footer">
+
+    </div>
+    <p>Mean:<br /></p>
+    <p id="mean"></p>
+    <p>List of number:<br /></p>
+    <ul id="list"></ul>
+    <script type="text/javascript">
+      var mean = 0
+      var i = 0
+      var tot = 0
+
+      while(true) {
+        n = prompt("Insert number of END:")
+        if(n == "end" || n == "END") {
+          break
+        } else {
+          i++
+          tot += Number(n)
+          mean = Number(tot / i)
+          document.getElementById("mean").innerHTML = mean;
+
+          var node = document.createElement("LI");
+          var textnode = document.createTextNode(n);
+          node.appendChild(textnode);
+          document.getElementById("list").appendChild(node);
+        }
+      }
+
+    </script>
+    <noscript>
+      Sorry: Your browser does not support or has disabled JavaScript.
+    </noscript>
+  </body>
+</html>

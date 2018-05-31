@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Test Page</title>
+    <meta name="Here some description" content="Trying Stuffs">
+    <meta name="Jacopx" content="LabForDP1">
+
+  </head>
+  <body>
+
+    <div class="header">
+      <h1>Test Page</h1>
+    </div>
+    <div class="info">
+      <h4>Website developed by <a href="https://github.com/Jacopx">Jacopx</a></h4>
+    </div>
+    <p>String to be lower: <input type="text" id="toLow" name="toLow" onfocus="this.value=''" value="Write here the string..." autocomplete="off"><br></p>
+    <button type="button" onclick="toLow()">Lowerize!</button>
+    <div class="footer">
+
+    </div>
+    <script type="text/javascript">
+      function toLow() {
+        alert("String: " + document.getElementById('toLow').value.toLowerCase())
+      }
+    </script>
+    <noscript>
+      Sorry: Your browser does not support or has disabled JavaScript.
+    </noscript>
+  </body>
+</html>
