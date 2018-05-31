@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Test Page</title>
+    <meta name="Here some description" content="Trying Stuffs">
+    <meta name="Jacopx" content="LabForDP1">
+
+  </head>
+  <body>
+
+    <div class="header">
+      <h1>Test Page</h1>
+    </div>
+    <div class="info">
+      <h4>Website developed by <a href="https://github.com/Jacopx">Jacopx</a></h4>
+    </div>
+    <div class="footer">
+
+    </div>
+    <script type="text/javascript">
+      n = prompt("Insert number:")
+
+      document.write("<table>");
+      document.write("<tr>");
+      document.write("<td>#</td>");
+      document.write("<td>Square</td>");
+      document.write("<td>Qube</td>");
+      document.write("</tr>");
+      for (var i=1; i <= n; i++) {
+        document.write("<tr>");
+        document.write("<td>"+ i +"</td>");
+        document.write("<td>" + Math.sqrt(i) + "</td>");
+        document.write("<td>" + Math.pow(i, 3) + "</td>");
+        document.write("</tr>");
+      }
+      document.write("</table>");
+    </script>
+    <noscript>
+      Sorry: Your browser does not support or has disabled JavaScript.
+    </noscript>
+  </body>
+</html>
